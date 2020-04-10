@@ -2,7 +2,7 @@
 
 Github Action to cross-compile Go project binaries for multiple platforms in a single run.
 
-Uses `golang:1.13` Docker image with `CGO_ENABLED=0` flag.
+Uses `golang:1.14` Docker image with `CGO_ENABLED=0` flag.
 
 ## Usage
 
@@ -34,7 +34,9 @@ Alternatively you can provide a list of target architectures in `arg`:
 
 ```yml
 - name: Make binaries
-  uses: sosedoff/actions/golang-build@master
+  uses: phenixrizen/actions/golang-build@master
+  env:
+    COMPRESS_FILES: "true"
   with:
     args: linux/amd64 darwin/amd64
 ```
