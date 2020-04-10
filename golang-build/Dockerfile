@@ -1,8 +1,8 @@
-FROM golang:1.13
+FROM golang:1.14
 
 LABEL "name"="Go Builder"
-LABEL "maintainer"="Dan Sosedoff <dan.sosedoff@gmail.com>"
-LABEL "version"="0.3.0"
+LABEL "maintainer"="Phenix Rizen <phenixrizen@gmail.com>"
+LABEL "version"="0.4.0"
 
 LABEL "com.github.actions.name"="Go Builder"
 LABEL "com.github.actions.description"="Cross-complile Go programs"
