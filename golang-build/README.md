@@ -21,7 +21,7 @@ jobs:
         uses: actions/checkout@master
 
       - name: Make binaries
-        uses: sosedoff/actions/golang-build@master
+        uses: phenixrizen/actions/golang-build@master
 ```
 
 Basic workflow configuration will compile binaries for the following platforms:
